@@ -3,61 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoyalRoots</title>
+    <title>LoyalRoots - Review Automation for Local Businesses</title>
     <style>
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
         }
-        header {
+        /* Navbar */
+        nav {
             background-color: #4CAF50;
-            color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
         }
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 20px;
-            margin-top: 0;
-        }
-        .button {
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: white;
-            color: #4CAF50;
-            border: 2px solid white;
-            border-radius: 30px;
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
         }
-        .services {
+        /* Hero Section */
+        .hero {
+            background-color: #e8f5e9;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 22px;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .section-text {
+            font-size: 20px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* How it Works */
+        .steps {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 40px 20px;
-            background-color: #ffffff;
+            margin-top: 40px;
         }
-        .service-card {
-            background-color: #e8f5e9;
+        .step {
+            background: white;
             border-radius: 10px;
             padding: 20px;
-            margin: 10px;
+            margin: 15px;
             width: 250px;
-            text-align: center;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
-        .service-card h3 {
+        .step h3 {
             color: #2e7d32;
-            margin-bottom: 10px;
         }
-        .service-card p {
-            color: #555;
+        /* Pricing */
+        .pricing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
         }
+        .plan {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 15px;
+            width: 250px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .plan h3 {
+            color: #2e7d32;
+        }
+        .plan p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        /* Footer */
         footer {
             background-color: #2e7d32;
             color: white;
@@ -69,28 +115,67 @@
 </head>
 <body>
 
-<header>
-    <h1>LoyalRoots</h1>
-    <p>Helping local businesses grow through smart review automation and customer loyalty systems.</p>
-    <a href="#services" class="button">Get Started</a>
-</header>
+<!-- Navbar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#how">How it Works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<section id="services" class="services">
-    <div class="service-card">
-        <h3>Review Automation</h3>
-        <p>We help you collect customer reviews on autopilot — boosting your online reputation effortlessly.</p>
-    </div>
-    <div class="service-card">
-        <h3>Customer Loyalty</h3>
-        <p>Keep customers coming back with loyalty programs designed to increase retention and revenue.</p>
-    </div>
-    <div class="service-card">
-        <h3>Business Growth Tools</h3>
-        <p>Simple, powerful software solutions to strengthen your connection with your local community.</p>
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <h1>Automate Your Reviews with LoyalRoots</h1>
+    <p>Helping local businesses grow faster through smart review automation and customer loyalty systems.</p>
+    <a href="#pricing">Get Started</a>
+</section>
+
+<!-- How It Works Section -->
+<section id="how">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-text">LoyalRoots makes collecting customer feedback effortless and automatic, saving you time and boosting your reputation.</p>
+
+    <div class="steps">
+        <div class="step">
+            <h3>1. Set Up</h3>
+            <p>Connect your business with our simple platform in just minutes.</p>
+        </div>
+        <div class="step">
+            <h3>2. Service</h3>
+            <p>After each service, your customer gets an automatic thank-you message.</p>
+        </div>
+        <div class="step">
+            <h3>3. Review</h3>
+            <p>We request a review with easy one-click options for your customers.</p>
+        </div>
+        <div class="step">
+            <h3>4. Grow</h3>
+            <p>Watch your online reviews and local reputation skyrocket!</p>
+        </div>
     </div>
 </section>
 
-<footer>
+<!-- Pricing Section -->
+<section id="pricing">
+    <h2 class="section-title">Pricing</h2>
+    <p class="section-text">Simple, affordable plans to fit businesses of any size.</p>
+
+    <div class="pricing">
+        <div class="plan">
+            <h3>Starter Plan</h3>
+            <p>$29/month</p>
+            <p>✔️ 200 SMS per month<br>✔️ Email review requests<br>✔️ Support via Email</p>
+        </div>
+        <div class="plan">
+            <h3>Pro Plan</h3>
+            <p>$59/month</p>
+            <p>✔️ 500 SMS per month<br>✔️ Email + SMS + Call review requests<br>✔️ Priority Support</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
     © 2024 LoyalRoots | Contact us at: loyalroots@example.com
 </footer>
 
