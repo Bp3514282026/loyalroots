@@ -2,26 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoyalRoots</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 20px;
             text-align: center;
-            background-color: #f2f2f2;
-            margin-top: 100px;
         }
-        h1 {
-            color: #333;
+        header h1 {
             font-size: 48px;
+            margin-bottom: 10px;
         }
-        p {
-            color: #666;
+        header p {
             font-size: 20px;
+            margin-top: 0;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        .service-card {
+            background-color: #e8f5e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .service-card h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            color: #555;
+        }
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to LoyalRoots!</h1>
-    <p>Helping businesses grow through automated review collection.</p>
+
+<header>
+    <h1>LoyalRoots</h1>
+    <p>Helping local businesses grow through smart review automation and customer loyalty systems.</p>
+    <a href="#services" class="button">Get Started</a>
+</header>
+
+<section id="services" class="services">
+    <div class="service-card">
+        <h3>Review Automation</h3>
+        <p>We help you collect customer reviews on autopilot — boosting your online reputation effortlessly.</p>
+    </div>
+    <div class="service-card">
+        <h3>Customer Loyalty</h3>
+        <p>Keep customers coming back with loyalty programs designed to increase retention and revenue.</p>
+    </div>
+    <div class="service-card">
+        <h3>Business Growth Tools</h3>
+        <p>Simple, powerful software solutions to strengthen your connection with your local community.</p>
+    </div>
+</section>
+
+<footer>
+    © 2024 LoyalRoots | Contact us at: loyalroots@example.com
+</footer>
+
 </body>
 </html>
